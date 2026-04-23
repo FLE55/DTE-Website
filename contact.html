@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Flynn">
+    <meta name="description" content="contact info">
+    <title>Cyclone Emergency Hub</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+  
+    <!-- Navigation Bar -->
+   <nav class="navbar">
+        <div class="navbox">
+            <div class="navname">DTE Vanuatu</div>
+            <ul class="navmenu">
+                <li><a href="index.html" class="navlinks">Live Alerts</a></li>
+                <li><a href="about.html" class="navlinks">Resilience / Prep</a></li>
+                <li><a href="contact.html" class="navlinks">Map / Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contact">
+ <!-- Weather Map  -->
+<iframe 
+    src="https://mapa.tutiempo.net/en/" 
+    width="550" 
+    height="500"  
+    title="Live Weather Map">
+</iframe>
+<p class="sr-only"> weather map.</p> </div>
+   <!-- contact information -->
+    <div class="contact">
+        <h1>Contact Us</h1> </div>
+             <!-- this does not actually work, I did not waant emails ect sent to me -->
+            <div class="contact">
+
+        <form  method="POST">
+            <div class="form">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            </div>
+            
+            
+            <div class="form">
+                <label>Email:</label>
+                <input type="email" name="email" required>
+        </div>
+            
+        
+        <div class="form">
+                <label>Phone:</label>
+                <input  type="tel" name="tel" required>
+
+        </div>
+            
+            
+            <div class="form">
+                <label>Message:</label>
+                <textarea id="message" name="message" required></textarea>
+        </div>
+           
+            <button type="submit" class="submit">Send Message</button>
+          
+          <!--emergency information-->
+            <address>
+            <p>Emergency Phone:+678 244387</p>
+            <p>or CrisisAlert@gmail.com</p>
+            <p><a href="https://www.vmgd.gov.vu/" target="_blank">VMGD Website</a></p>
+            </address>  
+        </form>
+    </div>
+    
+    </body>
+</html>
+
